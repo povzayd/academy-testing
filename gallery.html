@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Innovate Academy Gallery</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#1754cf",
+                        "background-light": "#f8f6f6",
+                        "background-dark": "#221610",
+                    },
+                    fontFamily: {
+                        "display": ["Public Sans", "sans-serif"]
+                    },
+                    borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+<style>
+        body { font-family: 'Public Sans', sans-serif; }
+        .gallery-item:hover .overlay { opacity: 1; }
+        .gallery-item:hover img { transform: scale(1.05); }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark text-slate-900 dark:text-slate-100 transition-colors duration-300">
+<!-- Header Section -->
+<header class="sticky top-0 z-50 w-full bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-md border-b border-primary/10">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="flex items-center justify-between h-16 sm:h-20">
+<div class="flex items-center gap-3">
+<div class="text-primary">
+<svg class="w-8 h-8" fill="none" viewbox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+<path clip-rule="evenodd" d="M24 0.757355L47.2426 24L24 47.2426L0.757355 24L24 0.757355ZM21 35.7574V12.2426L9.24264 24L21 35.7574Z" fill="currentColor" fill-rule="evenodd"></path>
+</svg>
+</div>
+<span class="text-xl font-bold tracking-tight text-slate-900 dark:text-white">Innovate Academy</span>
+</div>
+<div class="hidden md:flex items-center space-x-8">
+<a class="text-sm font-medium text-slate-600 hover:text-primary transition-colors" href="./programs.html">Programs</a>
+<a class="text-sm font-medium text-slate-600 hover:text-primary transition-colors" href="./doctors.html">eConsultation</a>
+<a class="text-sm font-medium text-slate-600 hover:text-primary transition-colors" href="./ejournal.html">eJournal</a>
+<a class="text-sm font-medium text-slate-600 hover:text-primary transition-colors" href="./gallery.html">Gallery</a>
+<a class="text-sm font-medium text-slate-600 hover:text-primary transition-colors" href="./contact.html">Contact</a>
+</div>
+<div class="flex items-center gap-4">
+<button class="p-2 rounded-full hover:bg-primary/10 transition-colors">
+<span class="material-symbols-outlined text-xl">search</span>
+</button>
+<button class="hidden sm:block px-5 py-2 bg-primary text-white rounded-lg font-semibold text-sm hover:bg-primary/90 transition-all">
+                        Apply Now
+                    </button>
+</div>
+</div>
+</div>
+</header>
+<main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-20">
+<!-- Hero Section -->
+<div class="max-w-3xl mb-12 sm:mb-16">
+<h1 class="text-4xl sm:text-6xl font-black text-slate-900 dark:text-white leading-tight mb-6">
+                Innovate Academy <span class="text-primary">Gallery</span>
+</h1>
+<p class="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
+                Capturing moments of innovation, discovery, and student excellence across our global campus. Explore the spaces where the future is being built today.
+            </p>
+</div>
+<!-- Filter Tabs -->
+<div class="flex flex-wrap gap-2 sm:gap-4 mb-10 pb-4 border-b border-slate-200 dark:border-slate-800">
+<button class="px-6 py-2 rounded-full bg-primary text-white text-sm font-bold transition-all shadow-lg shadow-primary/20">All</button>
+<button class="px-6 py-2 rounded-full bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-400 text-sm font-semibold hover:bg-primary/10 hover:text-primary transition-all">Campus</button>
+<button class="px-6 py-2 rounded-full bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-400 text-sm font-semibold hover:bg-primary/10 hover:text-primary transition-all">Research</button>
+<button class="px-6 py-2 rounded-full bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-400 text-sm font-semibold hover:bg-primary/10 hover:text-primary transition-all">Student Life</button>
+<button class="px-6 py-2 rounded-full bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-400 text-sm font-semibold hover:bg-primary/10 hover:text-primary transition-all">Events</button>
+</div>
+<!-- Image Grid -->
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+<!-- Item 1: Campus -->
+<div class="gallery-item group relative overflow-hidden rounded-xl bg-slate-200 dark:bg-slate-800 aspect-[3/4]">
+<img alt="Modern Campus Architecture" class="w-full h-full object-cover transition-transform duration-500" data-alt="Modern glass and steel university campus architecture" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCWYbozIWS0cm8ePGqN49lVvAzGhszVJBHobfD_PkDH8imrXJIlMc3YiKVAAub00TCK1eXlkehfCXcPcuBiWF_xiW0AbA9VZxVRKN9kDr8IW1TsE7KpYJr7-P4iVdxkeT9D3smsxZPkiAu1yZgqdJBBM6s7pDD0cYIkmoEBqZquaKoPgq2jdfi3zs9NbCfp4RoeKRzdgKfLgxtlpzypjDiGmLEnx77mmp5QognBxE-YA43CwrOJrrpnisnCQsFW4jMGsptybN0s4TlI"/>
+<div class="overlay absolute inset-0 bg-gradient-to-t from-background-dark/90 via-background-dark/20 to-transparent opacity-0 transition-opacity duration-300 flex flex-col justify-end p-6">
+<span class="text-primary text-xs font-bold tracking-widest uppercase mb-2">Campus</span>
+<h3 class="text-white font-bold text-lg leading-tight">Modern Glass Wing</h3>
+<div class="mt-4 flex items-center justify-center w-10 h-10 rounded-full bg-primary text-white">
+<span class="material-symbols-outlined">add</span>
+</div>
+</div>
+</div>
+<!-- Item 2: Research -->
+<div class="gallery-item group relative overflow-hidden rounded-xl bg-slate-200 dark:bg-slate-800 aspect-square sm:col-span-2 lg:col-span-1">
+<img alt="Robotics Lab" class="w-full h-full object-cover transition-transform duration-500" data-alt="High-tech robotics research laboratory with robotic arms" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDystK0oDlJCpHXgUW00F2p0o6oXpBMS6H_YF4UPA5tqRQA7WnjKjSxHjohgEtihwX9wmB9vCYG-pgzSK2n8SNYtMVl3xuxaR0Guyj7SDWUIuVeWIU-j_shBvM4dQy_r8KMDvUw6svvfbPr5eEac8ZJDzARQabqqLtiXGIHq5m_5S98W9VzLx-Lc4IEXzh9e7U9de-4YOjlbvM6ya4IoFZKRrPGqA9pX7pCIZMc9Y2hQ146EimisBC8sSSY6aK0u2O4pY0ZMGu3i3Up"/>
+<div class="overlay absolute inset-0 bg-gradient-to-t from-background-dark/90 via-background-dark/20 to-transparent opacity-0 transition-opacity duration-300 flex flex-col justify-end p-6">
+<span class="text-primary text-xs font-bold tracking-widest uppercase mb-2">Research</span>
+<h3 class="text-white font-bold text-lg leading-tight">AI &amp; Robotics Center</h3>
+<div class="mt-4 flex items-center justify-center w-10 h-10 rounded-full bg-primary text-white">
+<span class="material-symbols-outlined">add</span>
+</div>
+</div>
+</div>
+<!-- Item 3: Student Life -->
+<div class="gallery-item group relative overflow-hidden rounded-xl bg-slate-200 dark:bg-slate-800 aspect-[3/4]">
+<img alt="Students collaborating" class="w-full h-full object-cover transition-transform duration-500" data-alt="Diverse group of students working together in lounge" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBZ-QRs610HuwFgW-qw6g-Sk7-lLp8WjfEErn4Tmw8l7r_o1hMM8CSgMDZ_-jzkFIDZ8bZNOMI7b6ediaWenQSYutEGT9KJ1557_7fCYodUeVd-XNlhkhn9ljOtPLhxakFi1SzuywA-QhYqRYVONjTj2mAi8fpLQksp9WBqyJboPFM1ioplkJnR1wG-Vab-v87Xidnf4RiT9en7amZCTw1EYQkECfSarab-XxQsv53h_b-v2pTElLmEpDlQsAzejcSnqA6JTGHqCgxY"/>
+<div class="overlay absolute inset-0 bg-gradient-to-t from-background-dark/90 via-background-dark/20 to-transparent opacity-0 transition-opacity duration-300 flex flex-col justify-end p-6">
+<span class="text-primary text-xs font-bold tracking-widest uppercase mb-2">Student Life</span>
+<h3 class="text-white font-bold text-lg leading-tight">Collaborative Spaces</h3>
+<div class="mt-4 flex items-center justify-center w-10 h-10 rounded-full bg-primary text-white">
+<span class="material-symbols-outlined">add</span>
+</div>
+</div>
+</div>
+<!-- Item 4: Events -->
+<div class="gallery-item group relative overflow-hidden rounded-xl bg-slate-200 dark:bg-slate-800 aspect-video lg:col-span-2">
+<img alt="Graduation Ceremony" class="w-full h-full object-cover transition-transform duration-500" data-alt="Crowd of students at a university graduation ceremony" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDHR_2GGqarWF5n8AyZPa1tezydP8DhwvmFf9Yu8_cAjp8NuLpX72zxCAvr0iW0MkwnnBWy2q4_g7Bq61bqSLJS4AC0C41u_27OUhqrEiNkDg0aix4yNcmjxWWlBq8lBOpEg929beFO-RsSEMu6qAnMegnO69IcwEn9gbSsMAx-u_cU1_qqBO2F2Roy-A1iduiEa-C-wiKMM7P9K7OAoizwOh-JmEhxHAV_oo-PEc2rQoh5ai_6Pc1vd_TGPpuvjcUZQBWlIy3xFnmR"/>
+<div class="overlay absolute inset-0 bg-gradient-to-t from-background-dark/90 via-background-dark/20 to-transparent opacity-0 transition-opacity duration-300 flex flex-col justify-end p-6">
+<span class="text-primary text-xs font-bold tracking-widest uppercase mb-2">Events</span>
+<h3 class="text-white font-bold text-xl leading-tight">Class of 2024 Graduation</h3>
+<div class="mt-4 flex items-center justify-center w-10 h-10 rounded-full bg-primary text-white">
+<span class="material-symbols-outlined">add</span>
+</div>
+</div>
+</div>
+<!-- Item 5: Research -->
+<div class="gallery-item group relative overflow-hidden rounded-xl bg-slate-200 dark:bg-slate-800 aspect-[3/4]">
+<img alt="Clean room lab" class="w-full h-full object-cover transition-transform duration-500" data-alt="Researcher in a sterile clean room environment" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA2RlaYA17XXOjuIAWUPdJFAZutAm0bq6B82U8NQeQgJsH5pFBKbntdvjYXUaLM5KHNuAodLxovzbUC0oJvZx4SqTRTqk95YRIf1Pa_StWa2nNQeiTZWBbftyU-Gm8ajPxQP9Oyefq_2YSUr3vpa8s5oRDi8ZFHRuH4W2GOa_YJ2_AySkNSZ6p4oA5rhdJg-1BBKG2bEFJc72F3DP8PmUxQfZqLFaQPHcFOX4mQ3YEhxUv17J1TaXoTn2LVxHBl94kcyjqq80iXl65q"/>
+<div class="overlay absolute inset-0 bg-gradient-to-t from-background-dark/90 via-background-dark/20 to-transparent opacity-0 transition-opacity duration-300 flex flex-col justify-end p-6">
+<span class="text-primary text-xs font-bold tracking-widest uppercase mb-2">Research</span>
+<h3 class="text-white font-bold text-lg leading-tight">Quantum Computing Lab</h3>
+<div class="mt-4 flex items-center justify-center w-10 h-10 rounded-full bg-primary text-white">
+<span class="material-symbols-outlined">add</span>
+</div>
+</div>
+</div>
+<!-- Item 6: Campus -->
+<div class="gallery-item group relative overflow-hidden rounded-xl bg-slate-200 dark:bg-slate-800 aspect-square">
+<img alt="University building facade" class="w-full h-full object-cover transition-transform duration-500" data-alt="Stately brick university building with ivy and clock" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCBGreRDsNszPZjHCspiRxXFqjGtGCYs-ZdcPim9YVXrqKrK2p1BmYh0AaSXkk03J5Yh3iMkms4pe9rsFIzJU8x-l6MBwApsTsYLG7TzXIgkNiknGQCuUVQerc6ArJ_LVkbOVmBmZeyYUZJ4ZASgk8sGarFDcJZ_XkgVofwNJbAKutzpLnpkL6Y7xDwBmnOdJUsr6e3sEgFULiFHLs8sBhGgm9gnCgkf3sqArX8HJb8DmTcJnNMi0AFoY66hjDFkby-AFUBV87T6wcM"/>
+<div class="overlay absolute inset-0 bg-gradient-to-t from-background-dark/90 via-background-dark/20 to-transparent opacity-0 transition-opacity duration-300 flex flex-col justify-end p-6">
+<span class="text-primary text-xs font-bold tracking-widest uppercase mb-2">Campus</span>
+<h3 class="text-white font-bold text-lg leading-tight">Legacy Hall</h3>
+<div class="mt-4 flex items-center justify-center w-10 h-10 rounded-full bg-primary text-white">
+<span class="material-symbols-outlined">add</span>
+</div>
+</div>
+</div>
+<!-- Item 7: Student Life -->
+<div class="gallery-item group relative overflow-hidden rounded-xl bg-slate-200 dark:bg-slate-800 aspect-[3/4]">
+<img alt="Student coffee shop" class="w-full h-full object-cover transition-transform duration-500" data-alt="Students relaxed at a modern campus coffee shop" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAH9TUUBfQqScY7nJKxXKMpx0N3ckrd4CTK_39ZD9oqfUAuG8Y8KDdUCV_y35y1185Lg7FApdr4EbdqWgmNSybi8LV3UpZ71Tb_u5536QCbYFI8eUXEli_A4KwJtd89A862yBFypnGBfUvXH4flu-_IObNR1dAgEHL2aL7RYV1aeigGTxZUr_AKChrCQFVzXefCqg-zHFV8QTlWYUrvMOVBl93bVJ9vlmwR7F-G4kTMaZU1WUXF8uGRvX0HkFbqblEsKDfbr8Hfo0CV"/>
+<div class="overlay absolute inset-0 bg-gradient-to-t from-background-dark/90 via-background-dark/20 to-transparent opacity-0 transition-opacity duration-300 flex flex-col justify-end p-6">
+<span class="text-primary text-xs font-bold tracking-widest uppercase mb-2">Student Life</span>
+<h3 class="text-white font-bold text-lg leading-tight">Innovation Café</h3>
+<div class="mt-4 flex items-center justify-center w-10 h-10 rounded-full bg-primary text-white">
+<span class="material-symbols-outlined">add</span>
+</div>
+</div>
+</div>
+<!-- Item 8: Events -->
+<div class="gallery-item group relative overflow-hidden rounded-xl bg-slate-200 dark:bg-slate-800 aspect-square">
+<img alt="Tech Seminar" class="w-full h-full object-cover transition-transform duration-500" data-alt="Speaker on stage at a technology seminar conference" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCYTjsn55CF1dyfaaeliqunkQl6m8XJaYay76JQrDTWXsjhP6iRQPPvV6to68cCCkuhPuuT0R6MEdhiP9nCGuLx2jFGmPhxUsxzMW4oiIBjGZnibD5UMw7BSvHkglPE07o1iGu2-fayM6mr43TD_epYHN8heDUEAOhWbb4SxYe_VanPI5hXIXAQ1T-ljgVPF0G89MHKLyD2pCUnVayB0zpyjWXrbRJpPiWUgLVIgLJIDuisQwRfqcbSw-1uxn2Xlet_5jMGStdk12QD"/>
+<div class="overlay absolute inset-0 bg-gradient-to-t from-background-dark/90 via-background-dark/20 to-transparent opacity-0 transition-opacity duration-300 flex flex-col justify-end p-6">
+<span class="text-primary text-xs font-bold tracking-widest uppercase mb-2">Events</span>
+<h3 class="text-white font-bold text-lg leading-tight">Annual Tech Summit</h3>
+<div class="mt-4 flex items-center justify-center w-10 h-10 rounded-full bg-primary text-white">
+<span class="material-symbols-outlined">add</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Pagination -->
+<div class="mt-16 flex items-center justify-center gap-2">
+<button class="w-10 h-10 flex items-center justify-center rounded-full hover:bg-slate-200 dark:hover:bg-slate-800 transition-colors">
+<span class="material-symbols-outlined">chevron_left</span>
+</button>
+<button class="w-10 h-10 flex items-center justify-center rounded-full bg-primary text-white font-bold">1</button>
+<button class="w-10 h-10 flex items-center justify-center rounded-full hover:bg-slate-200 dark:hover:bg-slate-800 transition-colors">2</button>
+<button class="w-10 h-10 flex items-center justify-center rounded-full hover:bg-slate-200 dark:hover:bg-slate-800 transition-colors">3</button>
+<button class="w-10 h-10 flex items-center justify-center rounded-full hover:bg-slate-200 dark:hover:bg-slate-800 transition-colors">
+<span class="material-symbols-outlined">chevron_right</span>
+</button>
+</div>
+</main>
+<!-- Footer -->
+<footer class="bg-slate-100 dark:bg-slate-900 border-t border-slate-200 dark:border-slate-800 pt-16 pb-8">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
+<div class="col-span-1 md:col-span-1">
+<div class="flex items-center gap-3 mb-6">
+<div class="text-primary">
+<svg class="w-6 h-6" fill="none" viewbox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+<path clip-rule="evenodd" d="M24 0.757355L47.2426 24L24 47.2426L0.757355 24L24 0.757355ZM21 35.7574V12.2426L9.24264 24L21 35.7574Z" fill="currentColor" fill-rule="evenodd"></path>
+</svg>
+</div>
+<span class="text-lg font-bold tracking-tight text-slate-900 dark:text-white">Innovate Academy</span>
+</div>
+<p class="text-sm text-slate-600 dark:text-slate-400 mb-6">
+                        Leading the future of education through technology and creative thinking.
+                    </p>
+<div class="flex gap-4">
+<a class="text-slate-400 hover:text-primary" href="#"><span class="material-symbols-outlined">public</span></a>
+<a class="text-slate-400 hover:text-primary" href="#"><span class="material-symbols-outlined">alternate_email</span></a>
+<a class="text-slate-400 hover:text-primary" href="#"><span class="material-symbols-outlined">language</span></a>
+</div>
+</div>
+<div>
+<h4 class="font-bold mb-6 text-slate-900 dark:text-white">Quick Links</h4>
+<ul class="space-y-4 text-sm text-slate-600 dark:text-slate-400">
+<li><a class="hover:text-primary" href="#">Academic Calendar</a></li>
+<li><a class="hover:text-primary" href="#">Campus Map</a></li>
+<li><a class="hover:text-primary" href="#">Student Portal</a></li>
+<li><a class="hover:text-primary" href="#">Career Services</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-bold mb-6 text-slate-900 dark:text-white">Programs</h4>
+<ul class="space-y-4 text-sm text-slate-600 dark:text-slate-400">
+<li><a class="hover:text-primary" href="#">Applied Robotics</a></li>
+<li><a class="hover:text-primary" href="#">Data Science &amp; AI</a></li>
+<li><a class="hover:text-primary" href="#">Digital Design</a></li>
+<li><a class="hover:text-primary" href="#">Renewable Energy</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-bold mb-6 text-slate-900 dark:text-white">Newsletter</h4>
+<p class="text-sm text-slate-600 dark:text-slate-400 mb-4">Stay updated with our latest innovations.</p>
+<form class="flex flex-col gap-2">
+<input class="bg-white dark:bg-slate-800 border-slate-200 dark:border-slate-700 rounded-lg text-sm focus:ring-primary focus:border-primary" placeholder="Your email" type="email"/>
+<button class="bg-primary text-white rounded-lg py-2 text-sm font-bold hover:bg-primary/90 transition-colors">Subscribe</button>
+</form>
+</div>
+</div>
+<div class="pt-8 border-t border-slate-200 dark:border-slate-800 text-center">
+<p class="text-xs text-slate-500 dark:text-slate-600">
+                    © 2024 Innovate Academy. All rights reserved. Designed with precision for future leaders.
+                </p>
+</div>
+</div>
+</footer>
+</body></html>

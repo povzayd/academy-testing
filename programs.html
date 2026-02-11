@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>AI in Medical Diagnostics | Innovate Academy</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#1754cf",
+                        "background-light": "#f8f6f6",
+                        "background-dark": "#221610",
+                    },
+                    fontFamily: {
+                        "display": ["Public Sans"]
+                    },
+                    borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+<style>
+        body { font-family: 'Public Sans', sans-serif; }
+        .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24; }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark text-slate-900 dark:text-slate-100">
+<!-- Top Navigation Bar -->
+<header class="sticky top-0 z-50 w-full border-b border-primary/10 bg-white/80 dark:bg-background-dark/80 backdrop-blur-md">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="flex items-center justify-between h-16">
+<div class="flex items-center gap-8">
+<div class="flex items-center gap-2 text-primary">
+<span class="material-symbols-outlined text-3xl">clinical_notes</span>
+<h2 class="text-slate-900 dark:text-white text-lg font-bold leading-tight tracking-tight">Innovate Academy</h2>
+</div>
+<div class="hidden md:flex items-center space-x-8">
+<a class="text-sm font-medium text-slate-600 hover:text-primary transition-colors" href="./programs.html">Programs</a>
+<a class="text-sm font-medium text-slate-600 hover:text-primary transition-colors" href="./doctors.html">eConsultation</a>
+<a class="text-sm font-medium text-slate-600 hover:text-primary transition-colors" href="./ejournal.html">eJournal</a>
+<a class="text-sm font-medium text-slate-600 hover:text-primary transition-colors" href="./gallery.html">Gallery</a>
+<a class="text-sm font-medium text-slate-600 hover:text-primary transition-colors" href="./contact.html">Contact</a>
+</div>
+</div>
+<div class="flex items-center gap-4">
+<div class="hidden sm:flex items-center bg-slate-100 dark:bg-white/5 rounded-xl px-3 py-1.5 border border-slate-200 dark:border-white/10">
+<span class="material-symbols-outlined text-slate-400 text-sm">search</span>
+<input class="bg-transparent border-none focus:ring-0 text-sm w-32 lg:w-48 placeholder:text-slate-400" placeholder="Search programs..." type="text"/>
+</div>
+<button class="bg-primary text-white px-5 py-2 rounded-xl text-sm font-bold hover:bg-primary/90 transition-all shadow-lg shadow-primary/20">
+                        Apply Now
+                    </button>
+</div>
+</div>
+</div>
+</header>
+<main>
+<!-- Hero Section -->
+<section class="relative w-full h-[600px] flex items-end overflow-hidden">
+<div class="absolute inset-0 z-0">
+<img alt="Medical diagnostic screen with AI overlay" class="w-full h-full object-cover" data-alt="Doctor analyzing digital medical brain scans" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBFKEJ9zwpo2qrtfYg2IApzKhIcUrIh2E933podAkGM6sO0RZu7_IoJ3v12AWEOFkr9IovxeWo3u0I5gL81BTnVbEmYES9XY3dwFX7rg520N2OkegE06OZZ4ZKAGDhBATd2LmrGv1UOV-AOHJc3uNI5hXcWQZkFKXoHgFE04xBc-vXSmVeoW3cJlMp6rmgiKQwK5mU3BPPoavWfOBJQ48gGUhYZGBGMEcppgcCwcNQGjSW7Lpv7Nf9SE2fbaGrSlyKzJhHN02dvAZK9"/>
+<div class="absolute inset-0 bg-gradient-to-t from-background-dark via-background-dark/60 to-transparent"></div>
+</div>
+<div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-16 w-full">
+<div class="max-w-3xl">
+<span class="inline-block px-3 py-1 bg-primary/20 text-primary border border-primary/30 rounded-full text-xs font-bold uppercase tracking-widest mb-4">Master's Specialization</span>
+<h1 class="text-white text-5xl md:text-6xl font-black leading-tight mb-6">AI in Medical Diagnostics</h1>
+<p class="text-slate-200 text-lg md:text-xl leading-relaxed mb-8 max-w-2xl">
+                        Revolutionizing healthcare through advanced neural networks and medical image processing. Master the future of clinical technology and improve patient outcomes at scale.
+                    </p>
+<div class="flex flex-wrap gap-4">
+<button class="bg-primary text-white px-8 py-4 rounded-xl font-bold hover:bg-primary/90 transition-all flex items-center gap-2 shadow-xl shadow-primary/25">
+                            Apply for this Program
+                            <span class="material-symbols-outlined">arrow_forward</span>
+</button>
+<button class="bg-white/10 backdrop-blur-md text-white border border-white/20 px-8 py-4 rounded-xl font-bold hover:bg-white/20 transition-all flex items-center gap-2">
+<span class="material-symbols-outlined">download</span>
+                            Download Syllabus
+                        </button>
+</div>
+</div>
+</div>
+</section>
+<!-- Stats Grid -->
+<section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 -mt-12 relative z-20">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+<div class="bg-white dark:bg-zinc-900 p-8 rounded-2xl shadow-xl border border-slate-100 dark:border-white/5 flex items-start gap-5">
+<div class="bg-primary/10 p-3 rounded-lg text-primary">
+<span class="material-symbols-outlined text-3xl">schedule</span>
+</div>
+<div>
+<p class="text-sm text-slate-500 dark:text-slate-400 font-medium mb-1">Duration</p>
+<p class="text-2xl font-bold">12 Months</p>
+<p class="text-xs text-slate-400 mt-1 italic">Full-time or Part-time</p>
+</div>
+</div>
+<div class="bg-white dark:bg-zinc-900 p-8 rounded-2xl shadow-xl border border-slate-100 dark:border-white/5 flex items-start gap-5">
+<div class="bg-primary/10 p-3 rounded-lg text-primary">
+<span class="material-symbols-outlined text-3xl">workspace_premium</span>
+</div>
+<div>
+<p class="text-sm text-slate-500 dark:text-slate-400 font-medium mb-1">Degree Awarded</p>
+<p class="text-2xl font-bold">MSc Advanced AI</p>
+<p class="text-xs text-slate-400 mt-1 italic">Internationally Recognized</p>
+</div>
+</div>
+<div class="bg-white dark:bg-zinc-900 p-8 rounded-2xl shadow-xl border border-slate-100 dark:border-white/5 flex items-start gap-5">
+<div class="bg-primary/10 p-3 rounded-lg text-primary">
+<span class="material-symbols-outlined text-3xl">database</span>
+</div>
+<div>
+<p class="text-sm text-slate-500 dark:text-slate-400 font-medium mb-1">Total Credits</p>
+<p class="text-2xl font-bold">60 ECTS</p>
+<p class="text-xs text-slate-400 mt-1 italic">Transferable European Credits</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Program Overview -->
+<section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
+<div class="grid md:grid-cols-2 gap-16 items-center">
+<div>
+<h2 class="text-primary text-sm font-bold uppercase tracking-widest mb-3">Academic Excellence</h2>
+<h3 class="text-3xl md:text-4xl font-extrabold mb-6">Pushing the boundaries of Clinical Intelligence</h3>
+<div class="space-y-4 text-slate-600 dark:text-slate-300 leading-relaxed text-lg">
+<p>
+                            The AI in Medical Diagnostics program at Innovate Academy provides a deep dive into the intersection of machine learning and clinical practice. Our curriculum is designed by both clinicians and computer scientists to ensure practical relevance.
+                        </p>
+<p>
+                            Students will develop specialized skills in processing complex medical data, including MRI, CT, and X-ray imaging, designing diagnostic algorithms, and navigating the complex ethical and regulatory landscape of healthcare technology.
+                        </p>
+</div>
+<ul class="mt-8 space-y-3">
+<li class="flex items-center gap-3 font-medium">
+<span class="material-symbols-outlined text-primary">check_circle</span>
+                            Hands-on experience with real-world clinical datasets
+                        </li>
+<li class="flex items-center gap-3 font-medium">
+<span class="material-symbols-outlined text-primary">check_circle</span>
+                            Guest lectures from Fortune 500 Health-Tech leads
+                        </li>
+<li class="flex items-center gap-3 font-medium">
+<span class="material-symbols-outlined text-primary">check_circle</span>
+                            Capstone project in partnership with research hospitals
+                        </li>
+</ul>
+</div>
+<div class="bg-zinc-100 dark:bg-white/5 p-4 rounded-3xl">
+<img alt="Hands-on lab work" class="rounded-2xl shadow-2xl w-full h-[400px] object-cover" data-alt="Scientific researcher working with robotic medical arm" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDsaIpk3krX8ZLMpN75i6ufpS62saxhF4gsvluUfQ1m3aaOXwq-fwKZJ00hZNr8h0fAlblIYFW_osHpUGytDN6nj54hvcHH0gS4s_4VNDek7Su9p8AEl6NweBPWm6NQ7EP8UYTB-F2dH6avPOPBW0Nr8Kd5jsxOTwYngSw29kUCIjBtnvdpwkpdyYNx5na2_ZLAzHC9YHpWWC_xiuRd9FRwh-iDZqp7DOUllJm9vNYdO65_Gfa2M7OObQqDq25bhxIR1aF1iCNkiWh7"/>
+</div>
+</div>
+</section>
+<!-- Curriculum Breakdown -->
+<section class="bg-zinc-100 dark:bg-white/5 py-24">
+<div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="text-center mb-16">
+<h2 class="text-3xl md:text-4xl font-extrabold mb-4">Curriculum Breakdown</h2>
+<p class="text-slate-500 dark:text-slate-400">A rigorous 4-term curriculum designed for technical mastery.</p>
+</div>
+<div class="space-y-4">
+<!-- Module 1 -->
+<div class="bg-white dark:bg-zinc-900 rounded-2xl border border-slate-200 dark:border-white/10 overflow-hidden">
+<button class="w-full flex items-center justify-between p-6 text-left hover:bg-slate-50 dark:hover:bg-white/5 transition-colors group">
+<div class="flex items-center gap-4">
+<span class="text-primary font-bold text-lg">01</span>
+<h4 class="font-bold text-xl">Foundations of Neural Networks in Healthcare</h4>
+</div>
+<span class="material-symbols-outlined text-slate-400 group-hover:text-primary transition-colors">expand_more</span>
+</button>
+<div class="p-6 pt-0 text-slate-500 dark:text-slate-400 border-t border-slate-100 dark:border-white/5">
+                            Learn the fundamental architectures of deep learning including CNNs and RNNs, specifically optimized for biological data and electronic health records.
+                        </div>
+</div>
+<!-- Module 2 -->
+<div class="bg-white dark:bg-zinc-900 rounded-2xl border border-slate-200 dark:border-white/10 overflow-hidden">
+<button class="w-full flex items-center justify-between p-6 text-left hover:bg-slate-50 dark:hover:bg-white/5 transition-colors group">
+<div class="flex items-center gap-4">
+<span class="text-primary font-bold text-lg">02</span>
+<h4 class="font-bold text-xl">Medical Image Processing &amp; Vision</h4>
+</div>
+<span class="material-symbols-outlined text-slate-400 group-hover:text-primary transition-colors">expand_more</span>
+</button>
+</div>
+<!-- Module 3 -->
+<div class="bg-white dark:bg-zinc-900 rounded-2xl border border-slate-200 dark:border-white/10 overflow-hidden">
+<button class="w-full flex items-center justify-between p-6 text-left hover:bg-slate-50 dark:hover:bg-white/5 transition-colors group">
+<div class="flex items-center gap-4">
+<span class="text-primary font-bold text-lg">03</span>
+<h4 class="font-bold text-xl">Ethics, Privacy &amp; Regulatory Frameworks</h4>
+</div>
+<span class="material-symbols-outlined text-slate-400 group-hover:text-primary transition-colors">expand_more</span>
+</button>
+</div>
+<!-- Module 4 -->
+<div class="bg-white dark:bg-zinc-900 rounded-2xl border border-slate-200 dark:border-white/10 overflow-hidden">
+<button class="w-full flex items-center justify-between p-6 text-left hover:bg-slate-50 dark:hover:bg-white/5 transition-colors group">
+<div class="flex items-center gap-4">
+<span class="text-primary font-bold text-lg">04</span>
+<h4 class="font-bold text-xl">Clinical Deployment &amp; System Integration</h4>
+</div>
+<span class="material-symbols-outlined text-slate-400 group-hover:text-primary transition-colors">expand_more</span>
+</button>
+</div>
+</div>
+</div>
+</section>
+<!-- Career Prospects -->
+<section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24">
+<div class="text-center mb-16">
+<h2 class="text-3xl md:text-4xl font-extrabold mb-4">Where Our Graduates Work</h2>
+<p class="text-slate-500 dark:text-slate-400 max-w-2xl mx-auto">Prepare for high-impact roles at the intersection of technology and patient care.</p>
+</div>
+<div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+<div class="text-center p-6 grayscale hover:grayscale-0 transition-all opacity-60 hover:opacity-100">
+<span class="material-symbols-outlined text-5xl mb-4 text-primary">biotech</span>
+<h5 class="font-bold">Biotech Firms</h5>
+</div>
+<div class="text-center p-6 grayscale hover:grayscale-0 transition-all opacity-60 hover:opacity-100">
+<span class="material-symbols-outlined text-5xl mb-4 text-primary">local_hospital</span>
+<h5 class="font-bold">Research Hospitals</h5>
+</div>
+<div class="text-center p-6 grayscale hover:grayscale-0 transition-all opacity-60 hover:opacity-100">
+<span class="material-symbols-outlined text-5xl mb-4 text-primary">science</span>
+<h5 class="font-bold">Clinical Labs</h5>
+</div>
+<div class="text-center p-6 grayscale hover:grayscale-0 transition-all opacity-60 hover:opacity-100">
+<span class="material-symbols-outlined text-5xl mb-4 text-primary">hub</span>
+<h5 class="font-bold">HealthTech Startups</h5>
+</div>
+</div>
+<div class="mt-16 bg-primary/5 rounded-3xl p-8 md:p-12 border border-primary/10">
+<div class="grid md:grid-cols-3 gap-8">
+<div class="space-y-2">
+<h4 class="text-primary font-bold text-3xl">94%</h4>
+<p class="font-medium">Employment Rate within 6 months</p>
+</div>
+<div class="space-y-2">
+<h4 class="text-primary font-bold text-3xl">$115k</h4>
+<p class="font-medium">Average Starting Salary</p>
+</div>
+<div class="space-y-2">
+<h4 class="text-primary font-bold text-3xl">40+</h4>
+<p class="font-medium">Global Corporate Partners</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Meet the Instructors -->
+<section class="bg-zinc-900 text-white py-24">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-6">
+<div>
+<h2 class="text-3xl md:text-4xl font-extrabold mb-4">World-Class Faculty</h2>
+<p class="text-slate-400 max-w-xl">Learn from pioneer researchers and clinical practitioners who are actively shaping the industry.</p>
+</div>
+<button class="text-primary font-bold flex items-center gap-2 group">
+                        View all faculty <span class="material-symbols-outlined group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</button>
+</div>
+<div class="grid md:grid-cols-2 gap-8">
+<div class="bg-white/5 p-8 rounded-3xl border border-white/10 flex flex-col sm:flex-row gap-8 items-center sm:items-start">
+<img alt="Dr. Sarah Chen" class="w-32 h-32 rounded-full object-cover border-4 border-primary/20" data-alt="Portrait of a professional female doctor in white coat" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCCS0pY76ttj4PeqaLoEEBR_B8ob7eGyyJ7dH_FXXetz5SB7_28MNIVvZP1TfqvRtI6hAfSRUN3Fk9xMQvGNVIp81UVB8STycV1Bz3LVlObanQhdX056GrAHfnlyq6Mo_HoLpvBV3BIsvlARa0OwqwRWNcV60RUINsVlSJB3B1HtqVF5SqgfYvkJOHbRrXxnwcBxP4ws0JISbwkW33NfMRSPrkmi0SysNL9qsMwHaxpwsjxk3ikPg1dGIxryw7bGqL5w__HkSI1ObBO"/>
+<div>
+<h4 class="text-2xl font-bold mb-1">Dr. Sarah Chen</h4>
+<p class="text-primary font-medium mb-4">Lead Researcher, Neural Vision</p>
+<p class="text-slate-400 leading-relaxed text-sm">
+                                Formerly at Google Health, Dr. Chen holds 15+ patents in automated MRI segmentation and has published extensively in Nature Medicine.
+                            </p>
+</div>
+</div>
+<div class="bg-white/5 p-8 rounded-3xl border border-white/10 flex flex-col sm:flex-row gap-8 items-center sm:items-start">
+<img alt="Prof. James Wilson" class="w-32 h-32 rounded-full object-cover border-4 border-primary/20" data-alt="Portrait of a smiling male professor in business attire" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAUNC6wrbiNEtB01Lqbx3XHUAYSU6kGwqAQbhBxYC_ptNn6MQWGIdv3u9A7gTr9OBXEM9ypyLyuBt3ku5M-riaNLEnysS-us7ABHXITU-NjDyBwqQJwupPA_4UxOqpaVN1QiSvJieedbWlU_UblPEYmPgw0fOLPF8JGsaOkoJebqX3MV8C_Es4VPsFzsLu0Y90QlMMiWMoI1-9xdnDeqIRXvbohCPeQgzv9nBICJRRA1dydK1ZjCaQ904TXjs1xoZ5tfIqAxFxFwnMs"/>
+<div>
+<h4 class="text-2xl font-bold mb-1">Prof. James Wilson</h4>
+<p class="text-primary font-medium mb-4">Director of AI Ethics</p>
+<p class="text-slate-400 leading-relaxed text-sm">
+                                A pioneer in algorithmic bias, Prof. Wilson advises international bodies on the safe deployment of AI in critical clinical settings.
+                            </p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Admissions Requirements -->
+<section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24">
+<div class="bg-white dark:bg-zinc-900 rounded-[2.5rem] shadow-2xl border border-slate-100 dark:border-white/5 overflow-hidden flex flex-col lg:flex-row">
+<div class="lg:w-1/2 p-12 lg:p-20 bg-primary text-white">
+<h2 class="text-3xl md:text-4xl font-extrabold mb-8">Ready to Take the Next Step?</h2>
+<p class="text-white/80 text-lg mb-10">Our admissions process is selective, looking for candidates with a strong technical foundation and a passion for healthcare innovation.</p>
+<div class="space-y-6">
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined bg-white/20 p-2 rounded-lg">event</span>
+<div>
+<p class="font-bold">Next Cohort Starts</p>
+<p class="text-white/70">September 15, 2024</p>
+</div>
+</div>
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined bg-white/20 p-2 rounded-lg">timer</span>
+<div>
+<p class="font-bold">Application Deadline</p>
+<p class="text-white/70">July 30, 2024</p>
+</div>
+</div>
+</div>
+</div>
+<div class="lg:w-1/2 p-12 lg:p-20">
+<h3 class="text-2xl font-bold mb-8">Admission Requirements</h3>
+<ul class="space-y-6">
+<li class="flex gap-4">
+<span class="material-symbols-outlined text-primary">task_alt</span>
+<div>
+<p class="font-bold">Academic Degree</p>
+<p class="text-slate-500 text-sm">Bachelor's degree in Computer Science, Data Science, or Medicine.</p>
+</div>
+</li>
+<li class="flex gap-4">
+<span class="material-symbols-outlined text-primary">task_alt</span>
+<div>
+<p class="font-bold">Technical Proficiency</p>
+<p class="text-slate-500 text-sm">Working knowledge of Python, Linear Algebra, and Statistics.</p>
+</div>
+</li>
+<li class="flex gap-4">
+<span class="material-symbols-outlined text-primary">task_alt</span>
+<div>
+<p class="font-bold">Language Skills</p>
+<p class="text-slate-500 text-sm">English proficiency (TOEFL 90+ or IELTS 6.5+).</p>
+</div>
+</li>
+</ul>
+<button class="mt-12 w-full bg-primary text-white font-bold py-4 rounded-xl shadow-lg shadow-primary/30 hover:scale-[1.02] transition-transform">
+                        Start Application
+                    </button>
+</div>
+</div>
+</section>
+<!-- FAQ -->
+<section class="bg-zinc-100 dark:bg-white/5 py-24">
+<div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+<h2 class="text-3xl font-extrabold mb-12 text-center">Frequently Asked Questions</h2>
+<div class="space-y-4">
+<details class="group bg-white dark:bg-zinc-900 rounded-xl border border-slate-200 dark:border-white/10" open="">
+<summary class="flex items-center justify-between p-6 cursor-pointer list-none">
+<h5 class="font-bold">Is this program available online?</h5>
+<span class="material-symbols-outlined transition-transform group-open:rotate-180">expand_more</span>
+</summary>
+<div class="p-6 pt-0 text-slate-500 dark:text-slate-400">
+                            Yes, we offer a hybrid model with 70% of the content available asynchronously and 30% consisting of live, virtual lab sessions.
+                        </div>
+</details>
+<details class="group bg-white dark:bg-zinc-900 rounded-xl border border-slate-200 dark:border-white/10">
+<summary class="flex items-center justify-between p-6 cursor-pointer list-none">
+<h5 class="font-bold">Do I need a background in medicine?</h5>
+<span class="material-symbols-outlined transition-transform group-open:rotate-180">expand_more</span>
+</summary>
+<div class="p-6 pt-0 text-slate-500 dark:text-slate-400">
+                            No, but a strong technical background is required. We provide a "Clinical Fundamentals" bridge course for students coming from purely technical fields.
+                        </div>
+</details>
+<details class="group bg-white dark:bg-zinc-900 rounded-xl border border-slate-200 dark:border-white/10">
+<summary class="flex items-center justify-between p-6 cursor-pointer list-none">
+<h5 class="font-bold">What kind of hardware do I need?</h5>
+<span class="material-symbols-outlined transition-transform group-open:rotate-180">expand_more</span>
+</summary>
+<div class="p-6 pt-0 text-slate-500 dark:text-slate-400">
+                            Innovate Academy provides remote access to high-performance GPU clusters for all training tasks. A standard modern laptop is sufficient.
+                        </div>
+</details>
+</div>
+</div>
+</section>
+<!-- Final CTA -->
+<section class="py-24 bg-primary relative overflow-hidden">
+<div class="absolute inset-0 opacity-10">
+<svg height="100%" width="100%" xmlns="http://www.w3.org/2000/svg">
+<defs>
+<pattern height="40" id="grid" patternunits="userSpaceOnUse" width="40">
+<path d="M 40 0 L 0 0 0 40" fill="none" stroke="white" stroke-width="1"></path>
+</pattern>
+</defs>
+<rect fill="url(#grid)" height="100%" width="100%"></rect>
+</svg>
+</div>
+<div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-white">
+<h2 class="text-4xl md:text-5xl font-black mb-6">Master the Future of Health-Tech</h2>
+<p class="text-white/80 text-xl max-w-2xl mx-auto mb-10">Join a community of innovators and pioneers. Applications for the Fall 2024 cohort are now open.</p>
+<div class="flex flex-wrap justify-center gap-6">
+<button class="bg-white text-primary px-10 py-5 rounded-2xl font-black text-lg hover:bg-zinc-100 transition-all shadow-2xl">Apply Today</button>
+<button class="bg-transparent border-2 border-white/30 text-white px-10 py-5 rounded-2xl font-black text-lg hover:bg-white/10 transition-all">Speak to an Advisor</button>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-background-dark text-white py-16 border-t border-white/5">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="grid md:grid-cols-4 gap-12">
+<div class="col-span-1 md:col-span-2">
+<div class="flex items-center gap-2 text-primary mb-6">
+<span class="material-symbols-outlined text-4xl">clinical_notes</span>
+<h2 class="text-2xl font-bold tracking-tight">Innovate Academy</h2>
+</div>
+<p class="text-slate-400 max-w-sm leading-relaxed">
+                        The leading global institution for specialized AI education in healthcare, engineering, and digital transformation.
+                    </p>
+</div>
+<div>
+<h5 class="font-bold mb-6">Quick Links</h5>
+<ul class="space-y-4 text-slate-400 text-sm">
+<li><a class="hover:text-primary transition-colors" href="#">All Programs</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Scholarships</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Virtual Tour</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Career Services</a></li>
+</ul>
+</div>
+<div>
+<h5 class="font-bold mb-6">Contact</h5>
+<ul class="space-y-4 text-slate-400 text-sm">
+<li class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary text-lg">mail</span>
+                            admissions@innovate.edu
+                        </li>
+<li class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary text-lg">call</span>
+                            +1 (555) 012-3456
+                        </li>
+<li class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary text-lg">location_on</span>
+                            Tech Plaza, San Francisco, CA
+                        </li>
+</ul>
+</div>
+</div>
+<div class="mt-16 pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-4 text-slate-500 text-xs">
+<p>© 2024 Innovate Academy. All rights reserved.</p>
+<div class="flex gap-6">
+<a class="hover:text-white" href="#">Privacy Policy</a>
+<a class="hover:text-white" href="#">Terms of Service</a>
+<a class="hover:text-white" href="#">Cookie Policy</a>
+</div>
+</div>
+</div>
+</footer>
+</body></html>

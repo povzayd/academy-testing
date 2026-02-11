@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Contact Us | Innovate Academy</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;500;600;700;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#1754cf",
+                        "background-light": "#f8f6f6",
+                        "background-dark": "#221610",
+                    },
+                    fontFamily: {
+                        "display": ["Public Sans", "sans-serif"]
+                    },
+                    borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+<style>
+        body {
+            font-family: "Public Sans", sans-serif;
+        }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark text-slate-900 dark:text-white transition-colors duration-300">
+<!-- Top Navigation Bar -->
+<header class="sticky top-0 z-50 w-full border-b border-primary/10 bg-white/80 dark:bg-background-dark/80 backdrop-blur-md">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="flex h-20 items-center justify-between">
+<div class="flex items-center gap-3">
+<div class="text-primary">
+<svg class="h-8 w-8" fill="none" viewbox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+<path clip-rule="evenodd" d="M24 0.757355L47.2426 24L24 47.2426L0.757355 24L24 0.757355ZM21 35.7574V12.2426L9.24264 24L21 35.7574Z" fill="currentColor" fill-rule="evenodd"></path>
+</svg>
+</div>
+<span class="text-xl font-black tracking-tight text-slate-900 dark:text-white">Innovate Academy</span>
+</div>
+<div class="hidden md:flex items-center space-x-8">
+<a class="text-sm font-medium text-slate-600 hover:text-primary transition-colors" href="./programs.html">Programs</a>
+<a class="text-sm font-medium text-slate-600 hover:text-primary transition-colors" href="./doctors.html">eConsultation</a>
+<a class="text-sm font-medium text-slate-600 hover:text-primary transition-colors" href="./ejournal.html">eJournal</a>
+<a class="text-sm font-medium text-slate-600 hover:text-primary transition-colors" href="./gallery.html">Gallery</a>
+<a class="text-sm font-medium text-slate-600 hover:text-primary transition-colors" href="./contact.html">Contact</a>
+</div>
+<div class="flex items-center gap-4">
+<button class="hidden sm:flex h-11 items-center justify-center rounded-xl bg-primary px-6 text-sm font-bold text-white shadow-lg shadow-primary/20 hover:brightness-110 transition-all">
+                        Login
+                    </button>
+<div class="h-10 w-10 rounded-full bg-primary/10 flex items-center justify-center overflow-hidden border border-primary/20">
+<img class="h-full w-full object-cover" data-alt="User profile avatar" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAU4lbIc06HK0gZCd-BYxSsuX_zvVqC7fa8Pmk3RHG1HdOhtrkpjV8p6zKpuNUyNwweOuTyGOPJlFtqW0647DP0V2uMJRrA0Ye-UYZRUz0ZB0UziMuaaAr69htaE1lcMaNiT7r0_aTzCqQbtYmxrM4vPPYgCgW9BYLjr8-PvhmYQ7bLIORbOSoVZxkAaM0UpwT1Nl5lpuhmO8COO-wdI5Lzcu4cWHgP-qd3G5LrDpx2HbjHw8xgG0zo0a1sLcr1HTgI9FdsK4B0pL3m"/>
+</div>
+</div>
+</div>
+</div>
+</header>
+<main class="min-h-screen">
+<!-- Hero Section -->
+<section class="relative py-20 overflow-hidden">
+<div class="absolute inset-0 bg-primary/5 dark:bg-primary/10"></div>
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
+<div class="max-w-3xl">
+<h1 class="text-5xl md:text-6xl font-black leading-tight tracking-tighter text-slate-900 dark:text-white mb-6">
+                        Contact Us
+                    </h1>
+<p class="text-xl text-slate-600 dark:text-slate-300 max-w-2xl leading-relaxed">
+                        Have questions about your future in tech? Whether you're curious about our curriculum, admissions, or careers, our team is here to guide you.
+                    </p>
+</div>
+</div>
+</section>
+<!-- Main Content: Two Columns -->
+<section class="py-16 -mt-10">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+<!-- Left Column: Contact Info & Map -->
+<div class="space-y-8 order-2 lg:order-1">
+<div class="bg-white dark:bg-primary/5 rounded-xl p-8 shadow-sm border border-slate-200 dark:border-white/5">
+<h3 class="text-2xl font-bold mb-8">Our Headquarters</h3>
+<div class="space-y-6">
+<div class="flex items-start gap-4">
+<div class="h-10 w-10 shrink-0 flex items-center justify-center rounded-lg bg-primary/10 text-primary">
+<span class="material-symbols-outlined">location_on</span>
+</div>
+<div>
+<p class="font-bold text-slate-900 dark:text-white">Visit Us</p>
+<p class="text-slate-600 dark:text-slate-400">Tech Hub Plaza, Suite 500<br/>San Francisco, CA 94103</p>
+</div>
+</div>
+<div class="flex items-start gap-4">
+<div class="h-10 w-10 shrink-0 flex items-center justify-center rounded-lg bg-primary/10 text-primary">
+<span class="material-symbols-outlined">call</span>
+</div>
+<div>
+<p class="font-bold text-slate-900 dark:text-white">Call Us</p>
+<p class="text-slate-600 dark:text-slate-400">+1 (555) 000-1234</p>
+</div>
+</div>
+<div class="flex items-start gap-4">
+<div class="h-10 w-10 shrink-0 flex items-center justify-center rounded-lg bg-primary/10 text-primary">
+<span class="material-symbols-outlined">mail</span>
+</div>
+<div>
+<p class="font-bold text-slate-900 dark:text-white">Email Us</p>
+<p class="text-slate-600 dark:text-slate-400">hello@innovateacademy.edu</p>
+</div>
+</div>
+</div>
+<div class="mt-10">
+<p class="font-bold text-slate-900 dark:text-white mb-4">Follow Our Journey</p>
+<div class="flex gap-4">
+<a class="h-10 w-10 flex items-center justify-center rounded-full bg-slate-100 dark:bg-white/10 hover:bg-primary hover:text-white transition-all" href="#">
+<span class="material-symbols-outlined text-[20px]">group</span>
+</a>
+<a class="h-10 w-10 flex items-center justify-center rounded-full bg-slate-100 dark:bg-white/10 hover:bg-primary hover:text-white transition-all" href="#">
+<span class="material-symbols-outlined text-[20px]">alternate_email</span>
+</a>
+<a class="h-10 w-10 flex items-center justify-center rounded-full bg-slate-100 dark:bg-white/10 hover:bg-primary hover:text-white transition-all" href="#">
+<span class="material-symbols-outlined text-[20px]">videocam</span>
+</a>
+</div>
+</div>
+</div>
+<!-- Stylized Map Placeholder -->
+<div class="relative h-[300px] w-full rounded-xl overflow-hidden border border-slate-200 dark:border-white/5 group">
+<img class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-110" data-alt="Modern building in San Francisco tech district" data-location="San Francisco" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCwuJpFQiYXyFWJ3A5Nkk13aZOkyBAfHigrMx6aWo7Lxc_q7ZVaAczEFxlws_nuSd0G6M7nyM1Ot6d6HO71YFzqMdpe6NtWEBDlr7YiPScbu8uG8oi0VLzrCJc-B0P6uX6ERPTD1xcxvhPyKaYnxUE5todPo9h3535_Ao-9gd-nN5erDlQh3kzPy0VofprRg12Yz4fgv247KOe89NgVlQZs29PsfG_fqSiiFEKM4Xk2njzNSkuQzealimFXRiUnaBJR-kPnyjTOFrT5"/>
+<div class="absolute inset-0 bg-gradient-to-t from-background-dark/80 to-transparent flex items-end p-6">
+<div class="bg-white/10 backdrop-blur-md border border-white/20 rounded-lg p-3 text-white flex items-center gap-3">
+<span class="material-symbols-outlined text-primary">location_on</span>
+<span class="text-sm font-medium">Get directions on Google Maps</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Right Column: Contact Form -->
+<div class="order-1 lg:order-2">
+<div class="bg-white dark:bg-white/5 rounded-xl p-8 shadow-2xl shadow-primary/5 border border-slate-200 dark:border-white/10">
+<h2 class="text-3xl font-black mb-2">Send us a message</h2>
+<p class="text-slate-600 dark:text-slate-400 mb-8">Fill out the form below and our admissions team will respond within 24 hours.</p>
+<form action="#" class="space-y-6">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<div class="space-y-2">
+<label class="text-sm font-bold text-slate-700 dark:text-slate-300" for="name">Full Name</label>
+<input class="w-full rounded-lg border-slate-200 dark:border-white/10 bg-slate-50 dark:bg-white/5 px-4 py-3 text-slate-900 dark:text-white focus:border-primary focus:ring-primary focus:ring-1 outline-none transition-all" id="name" placeholder="John Doe" type="text"/>
+</div>
+<div class="space-y-2">
+<label class="text-sm font-bold text-slate-700 dark:text-slate-300" for="email">Email Address</label>
+<input class="w-full rounded-lg border-slate-200 dark:border-white/10 bg-slate-50 dark:bg-white/5 px-4 py-3 text-slate-900 dark:text-white focus:border-primary focus:ring-primary focus:ring-1 outline-none transition-all" id="email" placeholder="john@example.com" type="email"/>
+</div>
+</div>
+<div class="space-y-2">
+<label class="text-sm font-bold text-slate-700 dark:text-slate-300" for="subject">Subject</label>
+<select class="w-full rounded-lg border-slate-200 dark:border-white/10 bg-slate-50 dark:bg-white/5 px-4 py-3 text-slate-900 dark:text-white focus:border-primary focus:ring-primary focus:ring-1 outline-none transition-all appearance-none" id="subject">
+<option value="">Select a topic</option>
+<option value="admissions">Admissions Inquiry</option>
+<option value="curriculum">Course Curriculum</option>
+<option value="partnership">Business Partnerships</option>
+<option value="support">Technical Support</option>
+</select>
+</div>
+<div class="space-y-2">
+<label class="text-sm font-bold text-slate-700 dark:text-slate-300" for="message">Message</label>
+<textarea class="w-full rounded-lg border-slate-200 dark:border-white/10 bg-slate-50 dark:bg-white/5 px-4 py-3 text-slate-900 dark:text-white focus:border-primary focus:ring-primary focus:ring-1 outline-none transition-all resize-none" id="message" placeholder="Tell us how we can help you..." rows="5"></textarea>
+</div>
+<button class="w-full rounded-xl bg-primary py-4 text-center font-bold text-white shadow-xl shadow-primary/20 hover:brightness-110 active:scale-[0.98] transition-all" type="submit">
+                                    Send Message
+                                </button>
+</form>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- FAQs Section -->
+<section class="py-24 bg-slate-50 dark:bg-primary/5">
+<div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="text-center mb-16">
+<h2 class="text-4xl font-black mb-4">Support &amp; FAQs</h2>
+<p class="text-slate-600 dark:text-slate-400">Can't find what you're looking for? Here are some of our most common questions.</p>
+</div>
+<div class="space-y-4">
+<!-- FAQ Item 1 -->
+<div class="bg-white dark:bg-white/5 rounded-xl border border-slate-200 dark:border-white/10 p-6">
+<div class="flex justify-between items-center cursor-pointer">
+<h4 class="text-lg font-bold text-slate-900 dark:text-white">How do I apply for the full-stack program?</h4>
+<span class="material-symbols-outlined text-primary">expand_more</span>
+</div>
+<div class="mt-4 text-slate-600 dark:text-slate-400 leading-relaxed">
+                            The application process is entirely online. Click on the "Admissions" link in the menu to start your aptitude test and schedule your initial interview.
+                        </div>
+</div>
+<!-- FAQ Item 2 -->
+<div class="bg-white dark:bg-white/5 rounded-xl border border-slate-200 dark:border-white/10 p-6">
+<div class="flex justify-between items-center cursor-pointer">
+<h4 class="text-lg font-bold text-slate-900 dark:text-white">What are the tuition fees and payment plans?</h4>
+<span class="material-symbols-outlined text-primary">expand_more</span>
+</div>
+<div class="mt-4 text-slate-600 dark:text-slate-400 hidden">
+                            We offer various payment options including Income Share Agreements (ISA), monthly installments, and upfront payment discounts.
+                        </div>
+</div>
+<!-- FAQ Item 3 -->
+<div class="bg-white dark:bg-white/5 rounded-xl border border-slate-200 dark:border-white/10 p-6">
+<div class="flex justify-between items-center cursor-pointer">
+<h4 class="text-lg font-bold text-slate-900 dark:text-white">Is there a remote learning option available?</h4>
+<span class="material-symbols-outlined text-primary">expand_more</span>
+</div>
+<div class="mt-4 text-slate-600 dark:text-slate-400 hidden">
+                            Yes, all our major programs offer both on-campus (San Francisco) and fully remote synchronous learning paths.
+                        </div>
+</div>
+</div>
+<div class="mt-12 text-center">
+<p class="text-slate-600 dark:text-slate-400 mb-6">Need immediate help?</p>
+<a class="inline-flex items-center gap-2 font-bold text-primary hover:underline underline-offset-4" href="#">
+                        Visit our full Help Center <span class="material-symbols-outlined">arrow_forward</span>
+</a>
+</div>
+</div>
+</section>
+</main>
+<!-- Simple Footer -->
+<footer class="border-t border-slate-200 dark:border-white/5 py-12 bg-white dark:bg-background-dark">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="flex flex-col md:flex-row justify-between items-center gap-8">
+<div class="flex items-center gap-3">
+<div class="text-primary/50">
+<svg class="h-6 w-6" fill="none" viewbox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+<path clip-rule="evenodd" d="M24 0.757355L47.2426 24L24 47.2426L0.757355 24L24 0.757355ZM21 35.7574V12.2426L9.24264 24L21 35.7574Z" fill="currentColor" fill-rule="evenodd"></path>
+</svg>
+</div>
+<span class="font-black text-slate-400">Innovate Academy</span>
+</div>
+<div class="flex gap-8 text-sm font-medium text-slate-500">
+<a class="hover:text-primary transition-colors" href="#">Privacy Policy</a>
+<a class="hover:text-primary transition-colors" href="#">Terms of Service</a>
+<a class="hover:text-primary transition-colors" href="#">Cookie Policy</a>
+</div>
+<p class="text-sm text-slate-400">© 2024 Innovate Academy. All rights reserved.</p>
+</div>
+</div>
+</footer>
+</body></html>

@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Innovate Academy | Expert Medical Consultations</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#1754cf",
+                        "background-light": "#f8f6f6",
+                        "background-dark": "#221610",
+                    },
+                    fontFamily: {
+                        "display": ["Public Sans", "sans-serif"]
+                    },
+                    borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+<style>
+        body { font-family: 'Public Sans', sans-serif; }
+        .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24; }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark text-slate-900 dark:text-white transition-colors duration-300">
+<!-- Header Navigation -->
+<header class="sticky top-0 z-50 w-full bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-md border-b border-primary/10 dark:border-primary/20">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="flex items-center justify-between h-16 sm:h-20">
+<div class="flex items-center gap-3">
+<div class="bg-primary p-1.5 rounded-lg text-white">
+<span class="material-symbols-outlined block">health_metrics</span>
+</div>
+<h1 class="text-xl font-bold tracking-tight text-slate-900 dark:text-white">Innovate <span class="text-primary">Academy</span></h1>
+</div>
+<div class="hidden md:flex items-center space-x-8">
+<a class="text-sm font-medium text-slate-600 hover:text-primary transition-colors" href="./programs.html">Programs</a>
+<a class="text-sm font-medium text-slate-600 hover:text-primary transition-colors" href="./doctors.html">eConsultation</a>
+<a class="text-sm font-medium text-slate-600 hover:text-primary transition-colors" href="./ejournal.html">eJournal</a>
+<a class="text-sm font-medium text-slate-600 hover:text-primary transition-colors" href="./gallery.html">Gallery</a>
+<a class="text-sm font-medium text-slate-600 hover:text-primary transition-colors" href="./contact.html">Contact</a>
+</div>
+<div class="flex items-center gap-4">
+<button class="hidden sm:flex bg-primary text-white px-6 py-2 rounded-xl text-sm font-bold hover:bg-primary/90 transition-all shadow-lg shadow-primary/20">
+                        Apply Now
+                    </button>
+<button class="md:hidden text-slate-900 dark:text-white">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</div>
+</div>
+</div>
+</header>
+<main>
+<!-- Hero Section -->
+<section class="relative overflow-hidden pt-16 pb-20 lg:pt-24 lg:pb-32">
+<div class="absolute top-0 right-0 -z-10 w-1/2 h-full opacity-10 dark:opacity-20 pointer-events-none">
+<div class="absolute inset-0 bg-gradient-to-l from-primary to-transparent rounded-full blur-3xl transform translate-x-1/2 -translate-y-1/4"></div>
+</div>
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="grid lg:grid-cols-2 gap-12 items-center">
+<div class="space-y-8">
+<div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary/10 border border-primary/20 text-primary text-xs font-bold uppercase tracking-wider">
+<span class="relative flex h-2 w-2">
+<span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75"></span>
+<span class="relative inline-flex rounded-full h-2 w-2 bg-primary"></span>
+</span>
+                            Next-Gen Healthcare
+                        </div>
+<h1 class="text-5xl lg:text-7xl font-black leading-[1.1] text-slate-900 dark:text-white">
+                            Expert Medical <span class="text-primary">Consultations</span>
+</h1>
+<p class="text-lg text-slate-600 dark:text-slate-300 leading-relaxed max-w-xl">
+                            Where Human Expertise Meets AI Precision. We blend advanced AI-driven insights with world-class medical professionals to deliver superior health outcomes globally.
+                        </p>
+<div class="flex flex-col sm:flex-row gap-4">
+<button class="bg-primary text-white px-8 py-4 rounded-xl text-lg font-bold hover:scale-105 transition-transform shadow-xl shadow-primary/30">
+                                Get Started
+                            </button>
+<button class="flex items-center justify-center gap-2 px-8 py-4 rounded-xl text-lg font-bold border-2 border-primary/20 hover:bg-primary/5 transition-colors">
+<span class="material-symbols-outlined">play_circle</span>
+                                See How It Works
+                            </button>
+</div>
+</div>
+<div class="relative">
+<div class="rounded-3xl overflow-hidden shadow-2xl border-4 border-white dark:border-slate-800 transform rotate-2 hover:rotate-0 transition-transform duration-500">
+<img alt="Medical Technology" class="w-full aspect-square object-cover" data-alt="Modern medical professional using AI tablet" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC0toRsj5QnXjObBzjlkZusUPLhAzKEIuElKCzmzjAlvEje8trUGPTEsvaCOfHGypO4mE2w1vlW0K8legzQW-9i7MDqbQ-tZdXypFql82CdinWWwqOKpyzkcQgSTU7LZ_OykkDUofHMYN90fG-Ewbi4q1ADsxjq7qu_y6dXXkEWgL2h00JHronTQ5gDFCivd_m-qOn9EagSjvOQuLoROFXZqfoG0uJY-L2BPjI5kduGI0tWfdTBoST8DFiew8ggZLARlxntTr5HK3fb"/>
+</div>
+<div class="absolute -bottom-6 -left-6 bg-white dark:bg-slate-800 p-6 rounded-2xl shadow-xl border border-primary/10 max-w-[240px]">
+<div class="flex items-center gap-4 mb-3">
+<div class="bg-green-100 dark:bg-green-900/30 p-2 rounded-lg text-green-600">
+<span class="material-symbols-outlined">verified_user</span>
+</div>
+<div class="text-sm font-bold">AI Diagnostics</div>
+</div>
+<div class="text-xs text-slate-500 dark:text-slate-400 leading-snug">99.8% precision rate in preliminary digital scans.</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- How It Works -->
+<section class="py-20 bg-primary/5 dark:bg-primary/5">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="text-center mb-16">
+<h2 class="text-3xl font-bold mb-4">How it Works</h2>
+<p class="text-slate-600 dark:text-slate-400">Simplifying your path to better health in three easy steps.</p>
+</div>
+<div class="grid md:grid-cols-3 gap-8">
+<!-- Step 1 -->
+<div class="bg-white dark:bg-slate-800/50 p-8 rounded-2xl border border-primary/10 hover:border-primary/30 transition-all group">
+<div class="text-4xl font-black text-primary/20 group-hover:text-primary transition-colors mb-4">01</div>
+<div class="w-12 h-12 bg-primary/10 rounded-xl flex items-center justify-center text-primary mb-6">
+<span class="material-symbols-outlined">person_search</span>
+</div>
+<h3 class="text-xl font-bold mb-3">Choose a Specialist</h3>
+<p class="text-slate-600 dark:text-slate-400 text-sm leading-relaxed">
+                            Browse our roster of board-certified experts and find the right specialist for your specific health needs.
+                        </p>
+</div>
+<!-- Step 2 -->
+<div class="bg-white dark:bg-slate-800/50 p-8 rounded-2xl border border-primary/10 hover:border-primary/30 transition-all group">
+<div class="text-4xl font-black text-primary/20 group-hover:text-primary transition-colors mb-4">02</div>
+<div class="w-12 h-12 bg-primary/10 rounded-xl flex items-center justify-center text-primary mb-6">
+<span class="material-symbols-outlined">calendar_today</span>
+</div>
+<h3 class="text-xl font-bold mb-3">Schedule a Time</h3>
+<p class="text-slate-600 dark:text-slate-400 text-sm leading-relaxed">
+                            Pick a time that fits your schedule. Our global network operates across multiple time zones for your convenience.
+                        </p>
+</div>
+<!-- Step 3 -->
+<div class="bg-white dark:bg-slate-800/50 p-8 rounded-2xl border border-primary/10 hover:border-primary/30 transition-all group">
+<div class="text-4xl font-black text-primary/20 group-hover:text-primary transition-colors mb-4">03</div>
+<div class="w-12 h-12 bg-primary/10 rounded-xl flex items-center justify-center text-primary mb-6">
+<span class="material-symbols-outlined">videocam</span>
+</div>
+<h3 class="text-xl font-bold mb-3">Connect Securely</h3>
+<p class="text-slate-600 dark:text-slate-400 text-sm leading-relaxed">
+                            Join a high-definition, encrypted video session with your doctor and get instant AI-enhanced insights.
+                        </p>
+</div>
+</div>
+</div>
+</section>
+<!-- Featured Specialists -->
+<section class="py-24">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="flex flex-col md:flex-row items-end justify-between mb-12 gap-6">
+<div class="max-w-2xl">
+<h2 class="text-3xl font-bold mb-4">Featured Medical Specialists</h2>
+<p class="text-slate-600 dark:text-slate-400">Access the brightest minds in digital medicine and AI diagnostics.</p>
+</div>
+<button class="text-primary font-bold flex items-center gap-2 hover:gap-3 transition-all">
+                        View All Experts <span class="material-symbols-outlined">arrow_forward</span>
+</button>
+</div>
+<div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+<!-- Specialist Card 1 -->
+<div class="bg-white dark:bg-slate-800 rounded-2xl overflow-hidden border border-slate-200 dark:border-slate-700 shadow-sm hover:shadow-xl transition-shadow">
+<img alt="Dr. Aris Thorne" class="w-full h-56 object-cover" data-alt="Male doctor profile portrait" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCLwwKX8tsz7HCqz9N0DIHz1G68UO_hhzd1EyIic-dHfzJUE1Ce8bex7tlFXAMPpl9YyZ-cfJ7Pi4RC8wxpOcqWvVFaSj1KxxDi0QKRXxuVY902INmwdt4c5LAu_Qu4zD8_jXaGC9KBxqRMwHcz7_iTpvbt2_RJyxQvImuBpv6XA6smLjMxEjlItD29fkaSVS33ipssENUa6420JuG4z80OTsN8Yr8FYpvp6NE5haDjtU9WkHnCEzvR45utjmIlT2hI-0MQfQq2gI-l"/>
+<div class="p-6">
+<span class="text-[10px] font-bold uppercase tracking-widest text-primary mb-2 block">AI Diagnostics</span>
+<h4 class="text-lg font-bold mb-1">Dr. Aris Thorne</h4>
+<p class="text-sm text-slate-500 mb-6 italic">Harvard Medical School</p>
+<button class="w-full bg-slate-900 dark:bg-primary text-white py-3 rounded-lg text-sm font-bold hover:opacity-90 transition-opacity">
+                                Book Now
+                            </button>
+</div>
+</div>
+<!-- Specialist Card 2 -->
+<div class="bg-white dark:bg-slate-800 rounded-2xl overflow-hidden border border-slate-200 dark:border-slate-700 shadow-sm hover:shadow-xl transition-shadow">
+<img alt="Dr. Elena Rossi" class="w-full h-56 object-cover" data-alt="Female doctor in clinical setting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBvaRo2oeIujppTuwZxkCBmhWgjDfJa133f3BKauR6U7kbJeztYkeQ-8gcSW3npdMJCkABDfpdiNH1EV2WBv6P_zeZKk8d7WeISZyLge20gC3tVLI0r_t49ET2ZhutINwPJVbZfKjUo2-yfzJzJCmUGkJtQx1MX4JE4-sC_XtgsMbJeoIhjV-diUVcRa2AllDiRvtosDGxYZ8N20TMRyVV0eY648T0LEfggHpKKkOQEX3_fx03jOIvFSYjGdh0lksjqj9ZLlf3xDW3o"/>
+<div class="p-6">
+<span class="text-[10px] font-bold uppercase tracking-widest text-primary mb-2 block">Digital Health</span>
+<h4 class="text-lg font-bold mb-1">Dr. Elena Rossi</h4>
+<p class="text-sm text-slate-500 mb-6 italic">Stanford Bioinformatics</p>
+<button class="w-full bg-slate-900 dark:bg-primary text-white py-3 rounded-lg text-sm font-bold hover:opacity-90 transition-opacity">
+                                Book Now
+                            </button>
+</div>
+</div>
+<!-- Specialist Card 3 -->
+<div class="bg-white dark:bg-slate-800 rounded-2xl overflow-hidden border border-slate-200 dark:border-slate-700 shadow-sm hover:shadow-xl transition-shadow">
+<img alt="Dr. Sarah Chen" class="w-full h-56 object-cover" data-alt="Portrait of senior female specialist" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDyDIH6astl9mSEeLQQu3zh8xbb5a1pUd5V_Zo1kw4nxFt_-710nW3CNmnf8Jh8OCtTlW4VhqLQCmOG88SCxTGZCw7MWGfTULLrRNtTnsXvVovC-ULKz150LqURXUjdWo7Vdk8y4AB_1713RkOJyj707MACtHmRVAFSeYMZ_bn2k_QcO4rXcTQI4jlYfVi3LklX20YtM1uYWmCMUwm2CGUdrYSyXEvjujB2dvCqCAUTg_HfPdmSo4IKnbL_Jf4oXu4_b5VNY4jYIzUD"/>
+<div class="p-6">
+<span class="text-[10px] font-bold uppercase tracking-widest text-primary mb-2 block">Genomics AI</span>
+<h4 class="text-lg font-bold mb-1">Dr. Sarah Chen</h4>
+<p class="text-sm text-slate-500 mb-6 italic">Oxford Medical Research</p>
+<button class="w-full bg-slate-900 dark:bg-primary text-white py-3 rounded-lg text-sm font-bold hover:opacity-90 transition-opacity">
+                                Book Now
+                            </button>
+</div>
+</div>
+<!-- Specialist Card 4 -->
+<div class="bg-white dark:bg-slate-800 rounded-2xl overflow-hidden border border-slate-200 dark:border-slate-700 shadow-sm hover:shadow-xl transition-shadow">
+<img alt="Dr. Julian Vane" class="w-full h-56 object-cover" data-alt="Portrait of smiling male doctor" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD6GfgweCU24xCIt3DLJtEiYzCCQ1vtijperqvGPmft3mVW7C9PST6976uusu1B8P7nVzYX_j3K5ZQHUj5RMdrIKD_iCMGp7eAMlSiwF_jEl9Va_mP0BdCzJj-BrsXW1vIewVkFUEradXnaxQsFsPt5GCCsIKcHLzl5WaLkhAk2x3hbvAaw-0RXBjknEcVn_RvEfBN3w-EfTDIO_KshMT5c_YfOC3CHNJ6Pb8PjFrQ0h22s7V8H2-sTpjQQuU-jG4hRYLCUzJCer4Kz"/>
+<div class="p-6">
+<span class="text-[10px] font-bold uppercase tracking-widest text-primary mb-2 block">Neurology</span>
+<h4 class="text-lg font-bold mb-1">Dr. Julian Vane</h4>
+<p class="text-sm text-slate-500 mb-6 italic">MIT Health Labs</p>
+<button class="w-full bg-slate-900 dark:bg-primary text-white py-3 rounded-lg text-sm font-bold hover:opacity-90 transition-opacity">
+                                Book Now
+                            </button>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Benefits Section -->
+<section class="py-20 bg-slate-900 text-white overflow-hidden relative">
+<div class="absolute inset-0 bg-[radial-gradient(circle_at_30%_30%,#1754cf1a,transparent)] pointer-events-none"></div>
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+<div class="grid lg:grid-cols-3 gap-12">
+<div class="flex flex-col gap-6">
+<div class="w-14 h-14 rounded-2xl bg-primary flex items-center justify-center shadow-lg shadow-primary/40">
+<span class="material-symbols-outlined text-3xl">lock</span>
+</div>
+<h3 class="text-2xl font-bold">Secure &amp; Private</h3>
+<p class="text-slate-400 leading-relaxed">
+                            Every consultation is protected by end-to-end AES-256 encryption. Your health data is your own, stored on secure, HIPAA-compliant servers.
+                        </p>
+</div>
+<div class="flex flex-col gap-6">
+<div class="w-14 h-14 rounded-2xl bg-primary flex items-center justify-center shadow-lg shadow-primary/40">
+<span class="material-symbols-outlined text-3xl">psychology</span>
+</div>
+<h3 class="text-2xl font-bold">AI-Enhanced Insights</h3>
+<p class="text-slate-400 leading-relaxed">
+                            Our proprietary AI assists specialists by scanning medical histories and symptoms to suggest potential diagnostic paths and treatment optimizations.
+                        </p>
+</div>
+<div class="flex flex-col gap-6">
+<div class="w-14 h-14 rounded-2xl bg-primary flex items-center justify-center shadow-lg shadow-primary/40">
+<span class="material-symbols-outlined text-3xl">public</span>
+</div>
+<h3 class="text-2xl font-bold">Global Access</h3>
+<p class="text-slate-400 leading-relaxed">
+                            Access top-tier medical expertise from anywhere in the world. No travel, no waiting rooms—just expert care when you need it most.
+                        </p>
+</div>
+</div>
+</div>
+</section>
+<!-- FAQ Section -->
+<section class="py-24">
+<div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="text-center mb-16">
+<h2 class="text-3xl font-bold mb-4">Common Questions</h2>
+<p class="text-slate-600 dark:text-slate-400">Everything you need to know about our digital consultation process.</p>
+</div>
+<div class="space-y-4">
+<!-- FAQ Item 1 -->
+<details class="group bg-white dark:bg-slate-800/50 rounded-xl border border-slate-200 dark:border-slate-700 overflow-hidden" open="">
+<summary class="flex items-center justify-between p-6 cursor-pointer list-none">
+<span class="font-bold text-lg">Are AI diagnostics accurate?</span>
+<span class="material-symbols-outlined transition-transform group-open:rotate-180">expand_more</span>
+</summary>
+<div class="px-6 pb-6 text-slate-600 dark:text-slate-400 leading-relaxed">
+                            Yes, our AI models are trained on millions of clinical datasets and achieve over 99% accuracy in preliminary scans. However, they are always used as a tool by our human specialists, who make the final diagnosis.
+                        </div>
+</details>
+<!-- FAQ Item 2 -->
+<details class="group bg-white dark:bg-slate-800/50 rounded-xl border border-slate-200 dark:border-slate-700 overflow-hidden">
+<summary class="flex items-center justify-between p-6 cursor-pointer list-none">
+<span class="font-bold text-lg">How long is a typical consultation?</span>
+<span class="material-symbols-outlined transition-transform group-open:rotate-180">expand_more</span>
+</summary>
+<div class="px-6 pb-6 text-slate-600 dark:text-slate-400 leading-relaxed">
+                            A standard initial eConsultation lasts 30 minutes. Follow-up sessions are usually 15-20 minutes. Emergency AI-priority sessions may vary based on clinical requirements.
+                        </div>
+</details>
+<!-- FAQ Item 3 -->
+<details class="group bg-white dark:bg-slate-800/50 rounded-xl border border-slate-200 dark:border-slate-700 overflow-hidden">
+<summary class="flex items-center justify-between p-6 cursor-pointer list-none">
+<span class="font-bold text-lg">Is my insurance accepted?</span>
+<span class="material-symbols-outlined transition-transform group-open:rotate-180">expand_more</span>
+</summary>
+<div class="px-6 pb-6 text-slate-600 dark:text-slate-400 leading-relaxed">
+                            We partner with most major global insurance providers. You can upload your insurance details during the booking process to verify coverage instantly.
+                        </div>
+</details>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-slate-100 dark:bg-slate-900 pt-16 pb-8 border-t border-slate-200 dark:border-slate-800">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="grid md:grid-cols-4 gap-12 mb-16">
+<div class="col-span-2">
+<div class="flex items-center gap-3 mb-6">
+<div class="bg-primary p-1.5 rounded-lg text-white">
+<span class="material-symbols-outlined block">health_metrics</span>
+</div>
+<h2 class="text-2xl font-bold tracking-tight">Innovate Academy</h2>
+</div>
+<p class="text-slate-500 dark:text-slate-400 max-w-sm mb-8">
+                        Pioneering the future of medicine by bridging the gap between human compassion and artificial intelligence.
+                    </p>
+<div class="flex gap-4">
+<a class="w-10 h-10 rounded-full border border-slate-300 dark:border-slate-700 flex items-center justify-center hover:bg-primary hover:text-white hover:border-primary transition-all" href="#">
+<span class="material-symbols-outlined text-xl">share</span>
+</a>
+<a class="w-10 h-10 rounded-full border border-slate-300 dark:border-slate-700 flex items-center justify-center hover:bg-primary hover:text-white hover:border-primary transition-all" href="#">
+<span class="material-symbols-outlined text-xl">rss_feed</span>
+</a>
+<a class="w-10 h-10 rounded-full border border-slate-300 dark:border-slate-700 flex items-center justify-center hover:bg-primary hover:text-white hover:border-primary transition-all" href="#">
+<span class="material-symbols-outlined text-xl">mail</span>
+</a>
+</div>
+</div>
+<div>
+<h4 class="font-bold mb-6">Platform</h4>
+<ul class="space-y-4 text-slate-500 dark:text-slate-400 text-sm">
+<li><a class="hover:text-primary transition-colors" href="#">Programs</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">eConsultation</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Digital Library</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Research Gallery</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-bold mb-6">Support</h4>
+<ul class="space-y-4 text-slate-500 dark:text-slate-400 text-sm">
+<li><a class="hover:text-primary transition-colors" href="#">Privacy Policy</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Terms of Service</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Contact Us</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Global Support</a></li>
+</ul>
+</div>
+</div>
+<div class="pt-8 border-t border-slate-200 dark:border-slate-800 text-center text-sm text-slate-500 dark:text-slate-400">
+<p>© 2024 Innovate Academy. All rights reserved. Delivering medical excellence via AI.</p>
+</div>
+</div>
+</footer>
+</body></html>
